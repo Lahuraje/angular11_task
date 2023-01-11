@@ -12,4 +12,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSearchBtnClick(_searchText: String) {
+    console.warn(_searchText);
+    if (_searchText != null) {
+      alert(_searchText);
+    }
+  }
 }
